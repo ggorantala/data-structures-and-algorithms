@@ -1,0 +1,7 @@
+# ignore project bootstrap files
+.idea
+ps.iml
+.DS_Store
+
+# compiled files
+out
