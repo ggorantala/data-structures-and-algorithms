@@ -5,7 +5,7 @@ public class BinarySearch {
     System.out.println(binarySearch(new int[] {-1, 0, 3, 5, 9, 12}, 9));
   }
 
-  //  Time: O(logn),  Space: O(1), where n = length of numbers array
+  //  Time: O(logn),  Space: O(1), where n = length of nums array
   private static int binarySearch(int[] nums, int target) {
     int low = 0;
     int high = nums.length - 1;
