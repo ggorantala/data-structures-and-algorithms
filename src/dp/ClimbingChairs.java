@@ -4,6 +4,7 @@ public class ClimbingChairs {
   public static void main(String[] args) {
     System.out.println(climbStair(2));
     System.out.println(climbStair(10));
+    System.out.println(climbStair(15));
   }
 
   public static int climbStair(int n) {
