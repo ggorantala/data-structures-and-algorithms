@@ -7,18 +7,18 @@ public class SearchInsertPosition {
 
   private static int searchInsert(int[] nums, int target) {
     int middle;
-    int low = 0;
-    int high = nums.length - 1;
-    while (low <= high) {
-      middle = low + (high - low) / 2;
+    int start = 0;
+    int end = nums.length - 1;
+    while (start <= end) {
+      middle = start + (end - start) / 2;
       if (nums[middle] == target) {
         return middle;
       } else if (target < nums[middle]) {
-        high = middle - 1;
+        end = middle - 1;
       } else {
-        low = middle + 1;
+        start = middle + 1;
       }
     }
-    return low;
+    return start;
   }
 }

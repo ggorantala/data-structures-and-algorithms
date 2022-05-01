@@ -2,11 +2,11 @@ package binarysearch;
 
 public class SquartRoot {
   public static void main(String[] args) {
-    System.out.println(sqrt(8));
-    System.out.println(sqrt(25));
+    System.out.println(isPerfectSquare(8));
+    System.out.println(isPerfectSquare(25));
   }
 
-  public static int sqrt(int n) {
+  public static int isPerfectSquare(int n) {
     int left = 2;
     int right = n / 2;
 
