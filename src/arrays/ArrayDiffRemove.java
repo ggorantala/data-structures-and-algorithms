@@ -1,6 +1,9 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class ArrayDiffRemove {
   public static void main(String[] args) {
@@ -9,7 +12,23 @@ public class ArrayDiffRemove {
   }
 
   public static int[] arrayDiff(int[] a, int[] b) {
-    // Your code here
-    return a;
+    if (b.length == 0) {
+      return a;
+    }
+
+    List<Integer> ans = new ArrayList<>();
+    int k = 0;
+    HashMap<Integer, Boolean> lookup = new HashMap<>();
+
+    for (int j : b) {
+      lookup.put(j, true);
+    }
+
+    for (int j : a) {
+      if (!lookup.containsKey(j)) {
+        ans.add(j);
+      }
+    }
+    return ans.stream().mapToInt(i -> i).toArray();
   }
 }
