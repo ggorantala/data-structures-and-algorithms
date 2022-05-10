@@ -10,7 +10,7 @@ public class IsPrime {
     System.out.println(isPrime(22));
   }
 
-  private static boolean isPrime(int n) {
+  public static boolean isPrime(int n) {
     if (n < 2) return false;
 
     for (int i = 2; i <= Math.sqrt(n); i++) {

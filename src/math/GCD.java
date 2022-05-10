@@ -20,9 +20,17 @@ public class GCD {
 
   public static int euclideanAlgorithm(int a, int b) {
     while (a != b) {
-      if (a > b) a -= b;
-      else b -= a;
+      if (a > b) {
+        a = a - b;
+      } else {
+        b = b - a;
+      }
     }
     return a;
+  }
+
+  public static int optimizedEuclidean(int a, int b) {
+    if (b == 0) return a;
+    return optimizedEuclidean(b, a % b);
   }
 }
