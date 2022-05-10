@@ -12,14 +12,12 @@ public class PalindromeNumber {
   }
 
   public static int reverseNumber(int n) {
-    int number = 0;
-    int count = 0;
+    int revNumber = 0;
     while (n > 0) {
       int remainder = n % 10;
-
-      number = number * 10 + remainder;
+      revNumber = revNumber * 10 + remainder;
       n /= 10;
     }
-    return number;
+    return revNumber;
   }
 }
