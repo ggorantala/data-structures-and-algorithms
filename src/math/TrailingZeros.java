@@ -1,7 +1,5 @@
 package math;
 
-import java.util.Arrays;
-
 public class TrailingZeros {
   public static void main(String[] args) {
     System.out.println(zeros(6));
