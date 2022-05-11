@@ -3,6 +3,7 @@ package math;
 public class PrimeFactors {
   public static void main(String[] args) {
     primeFactors(12);
+    optimizedApproach(450);
     moreOptimized(450);
   }
 
