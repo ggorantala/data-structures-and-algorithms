@@ -15,7 +15,7 @@ public class ValidateSubsequence {
     int seqIndex = 0;
 
     while (arrayIndex < array.size() && seqIndex < sequence.size()) {
-      if (sequence.get(seqIndex) == array.get(arrayIndex)) {
+      if (sequence.get(seqIndex).equals(array.get(arrayIndex))) {
         seqIndex++;
       }
       arrayIndex++;
