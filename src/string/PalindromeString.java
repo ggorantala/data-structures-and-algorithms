@@ -6,6 +6,7 @@ public class PalindromeString {
     System.out.println(isPalindrome("xyz"));
   }
 
+  // O(n) time, and O(1) space
   public static boolean isPalindrome(String s) {
     int start = 0;
     int end = s.length() - 1;

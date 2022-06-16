@@ -9,7 +9,9 @@ public class PeakIndexInMountainArray {
     if (nums.length == 0) return 0;
 
     int i = 0;
-    while (nums[i] < nums[i + 1]) i++;
+    while (nums[i] < nums[i + 1]) {
+      i++;
+    }
     return i;
   }
 }

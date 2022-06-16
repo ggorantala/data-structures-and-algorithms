@@ -11,8 +11,8 @@ public class LongestPalindromeSusbstring {
     int end = 0;
 
     for (int i = 0; i < str.length() - 1; i++) {
-      int len1 = expandFromMiddle(str, i, i);
-      int len2 = expandFromMiddle(str, i, i + 1);
+      int len1 = expandFromMiddle(str, i, i); // odd length
+      int len2 = expandFromMiddle(str, i, i + 1); // even length
 
       int len = Math.max(len1, len2);
 
