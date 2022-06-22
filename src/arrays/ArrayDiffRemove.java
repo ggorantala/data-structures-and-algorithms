@@ -17,7 +17,6 @@ public class ArrayDiffRemove {
     }
 
     List<Integer> ans = new ArrayList<>();
-    int k = 0;
     HashMap<Integer, Boolean> lookup = new HashMap<>();
 
     for (int j : b) {
