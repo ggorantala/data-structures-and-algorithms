@@ -20,7 +20,6 @@ public class LongestConsecutiveSequence {
         int sequence = 1;
 
         while (values.contains(num + sequence)) {
-          System.out.println(num +" " + sequence +" " + (num + sequence));
           ++sequence;
         }
 
