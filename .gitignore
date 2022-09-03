@@ -1,7 +1,8 @@
 # ignore project bootstrap files
 .idea
-ps.iml
 .DS_Store
+data-structures-and-algorithms.iml
 
 # compiled files
 out
+

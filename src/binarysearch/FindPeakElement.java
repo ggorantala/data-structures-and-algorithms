@@ -1,9 +1,10 @@
 package binarysearch;
 
 public class FindPeakElement {
+
   public static void main(String[] args) {
-    System.out.println(findPeak(new int[] {1, 2, 3, 1}));
-    System.out.println(findPeak(new int[] {1, 2, 1, 3, 5, 6, 4}));
+    System.out.println(findPeak(new int[]{1, 2, 3, 1}));
+    System.out.println(findPeak(new int[]{1, 2, 1, 3, 5, 6, 4}));
   }
 
   public static int findPeak(int[] nums) {
