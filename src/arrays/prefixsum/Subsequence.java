@@ -6,6 +6,23 @@ public class Subsequence {
   public static void main(String[] args) {
     System.out.println(solve("ABBAAG"));
     System.out.println(solve("GBA"));
+
+
+    System.out.println(optimised("ABBAAG"));
+    System.out.println(optimised("GBA"));
+  }
+
+  public static int optimised(String A) {
+    int m = 1000000007; // for 10^9 + 7 constraints
+    System.out.println(m);
+    int ans = 0;
+    int cnt = 0;
+    int N = A.length();
+    for (int i = N - 1; i >= 0; i--) {
+      if (A.charAt(i) == 'G') cnt++;
+      if (A.charAt(i) == 'A') ans = (ans + cnt) % m;
+    }
+    return ans % m;
   }
 
   public static int solve(String A) {
