@@ -25,6 +25,9 @@ public class ProductArray {
       suffixSum[i] = suffixSum[i + 1] * A.get(i + 1);
     }
 
+    System.out.println(Arrays.toString(prefixSum));
+    System.out.println(Arrays.toString(suffixSum));
+
     for (int i = 0; i < N; i++) {
       result.add(prefixSum[i] * suffixSum[i]);
     }
