@@ -18,9 +18,9 @@ public class PickBothSides {
         int result = 0;
         boolean flag = false;
 
-        while(B-- > 0) {
-            if(i > 1) flag = true;
-            if(A.get(j) > A.get(i) && !flag) {
+        while (B-- > 0) {
+            if (i > 1) flag = true;
+            if (A.get(j) > A.get(i) && !flag) {
                 result += A.get(j--);
             } else {
                 result += A.get(i++);

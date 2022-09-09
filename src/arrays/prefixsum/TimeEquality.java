@@ -12,25 +12,25 @@ import java.util.Arrays;
  * We can change the array A = [4, 4, 4, 4, 4]. The time required will be 8 seconds.
  */
 public class TimeEquality {
-  public static void main(String[] args) {
-    ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2, 4, 1, 3, 2));
-    System.out.println(solve(A));
-  }
-
-  public static int solve(ArrayList<Integer> A) {
-    int max = A.get(0);
-    for (int i : A) {
-      if (i > max) {
-        max = i;
-      }
+    public static void main(String[] args) {
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(2, 4, 1, 3, 2));
+        System.out.println(solve(A));
     }
 
-    int result = 0;
+    public static int solve(ArrayList<Integer> A) {
+        int max = A.get(0);
+        for (int i : A) {
+            if (i > max) {
+                max = i;
+            }
+        }
 
-    for (Integer integer : A) {
-      result += max - integer;
+        int result = 0;
+
+        for (Integer integer : A) {
+            result += max - integer;
+        }
+
+        return result;
     }
-
-    return result;
-  }
 }
