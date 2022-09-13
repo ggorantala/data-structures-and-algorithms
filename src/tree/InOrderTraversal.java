@@ -1,9 +1,9 @@
-package BinaryTree;
+package tree;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PreOrderTraversal {
+public class InOrderTraversal {
     public static void main(String[] args) {
         TreeNode A = new TreeNode(1);
         TreeNode C = new TreeNode(2);
@@ -11,10 +11,10 @@ public class PreOrderTraversal {
         A.right = C;
         C.left = D;
 
-        System.out.println(preorderTraversal(A));
+        System.out.println(inOrderTraversal(A));
     }
 
-    public static List<Integer> preorderTraversal(TreeNode root) {
+    public static List<Integer> inOrderTraversal(TreeNode root) {
         List<Integer> values = new ArrayList<>();
         dfs(root, values);
         return values;
@@ -25,9 +25,8 @@ public class PreOrderTraversal {
             return;
         }
 
-        values.add(root.val);
         dfs(root.left, values);
+        values.add(root.val);
         dfs(root.right, values);
     }
 }
-

@@ -1,4 +1,4 @@
-package BinaryTree;
+package tree;
 
 public class BinaryTreeImplementation {
     public static void main(String[] args) {
