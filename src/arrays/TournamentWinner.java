@@ -12,15 +12,14 @@ public class TournamentWinner {
         ArrayList<Integer> result = new ArrayList<>(Arrays.asList(0, 0, 1));
         ArrayList<ArrayList<String>> competitions = new ArrayList<>();
 
-        competitions.add(new ArrayList(Arrays.asList("HTML", "C#")));
-        competitions.add(new ArrayList(Arrays.asList("C#", "PYTHON")));
-        competitions.add(new ArrayList(Arrays.asList("PYTHON", "HTML")));
+        competitions.add(new ArrayList<>(Arrays.asList("HTML", "C#")));
+        competitions.add(new ArrayList<>(Arrays.asList("C#", "PYTHON")));
+        competitions.add(new ArrayList<>(Arrays.asList("PYTHON", "HTML")));
 
         System.out.println(tournamentWinner(competitions, result));
     }
 
-    public static String tournamentWinner(
-        ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
+    public static String tournamentWinner(ArrayList<ArrayList<String>> competitions, ArrayList<Integer> results) {
 
         HashMap<String, Integer> lookup = new HashMap<>();
         String currentBestTeam = "";
