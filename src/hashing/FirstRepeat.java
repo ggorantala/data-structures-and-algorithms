@@ -20,8 +20,7 @@ public class FirstRepeat {
         int el = -1;
         int cnt = 0;
 
-        for (int i = 0; i < A.size(); i++) {
-            Integer integer = A.get(i);
+        for (Integer integer : A) {
             if (memo.get(integer) == 2 && el == -1) {
                 el = integer;
             }

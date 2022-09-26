@@ -13,7 +13,8 @@ public class MergeAndSplit {
             xor ^= A[i];
         }
 
-        if ((xor & 1) == 1) return "No";
+        if ((xor & 1) == 1)
+            return "No";
         return "Yes";
     }
 }

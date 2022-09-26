@@ -19,14 +19,14 @@ public class AddBinaryStrings {
             sum += i >= 0 ? A.charAt(i) - '0' : 0;
             sum += j >= 0 ? B.charAt(j) - '0' : 0;
 
-            sb.insert(0, sum % 2);
+            sb.append(sum % 2);
             carry = sum / 2;
             i--;
             j--;
         }
         if(carry > 0) {
-            sb.insert(0, carry);
+            sb.append(carry);
         }
-        return sb.toString();
+        return sb.reverse().toString();
     }
 }
