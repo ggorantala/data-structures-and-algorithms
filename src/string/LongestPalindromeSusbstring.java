@@ -30,8 +30,8 @@ public class LongestPalindromeSusbstring {
         if (i > j) return 0;
 
         while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)) {
-            i--;
-            j++;
+            i -= 1;
+            j += 1;
         }
 
         return j - i - 1;
