@@ -27,7 +27,9 @@ public class LongestPalindromeSusbstring {
     }
 
     public static int expandFromMiddle(String s, int i, int j) {
-        if (i > j) return 0;
+        if (i > j) {
+            return 0;
+        }
 
         while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)) {
             i -= 1;
