@@ -1,5 +1,7 @@
 # ignore project bootstrap files
 .idea
+.fleet
+out
 .DS_Store
 data-structures-and-algorithms.iml
 
